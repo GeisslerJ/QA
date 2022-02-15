@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "docker" {
-  host = "ssh://docker@192.168.57.1:22"
+  host = "ssh://docker@192.168.57.100:22"
 }
 resource "docker_image" "nginx" {
   name         = "nginx:latest"
